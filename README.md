@@ -13,6 +13,7 @@ This is the repository for Scrawlr Technical assessment
 #### Running the tests
 
 - Run `npm test`
+- Test files are located in the `src/components/__tests__` folder
 
 ## Dependencies
 
@@ -43,3 +44,6 @@ The following dependencies are required to run the project:
     "@testing-library/react": "^16.0.1"
   }
 ```
+
+## Application Screenshot
+![Screenshot](./public/app.png)
