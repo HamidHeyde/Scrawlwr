@@ -21,7 +21,7 @@ The following dependencies are required to run the project:
 ##### Main dependencies
 
 ```json
-dependencies: {
+"dependencies": {
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
     "@mui/icons-material": "^6.0.1",
@@ -38,7 +38,7 @@ dependencies: {
 ##### Dev dependencies (tests)
 
 ```json
-devDependencies: {
+"devDependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/react": "^16.0.1"
   }
