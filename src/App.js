@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { styled } from '@mui/system'
+import { UpvoteApplication } from './components/UpvoteApplication'
+import { UpvoteContextProvider } from './context/UpvoteContext'
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <UpvoteContextProvider>
+      <AppWrapper>
+        <div className="headerWrapper">Scrawlr Technical assessment</div>
+        <UpvoteApplication />
+      </AppWrapper>
+    </UpvoteContextProvider>
+  )
 }
 
-export default App;
+export default App
+
+const AppWrapper = styled('div')({
+  display: 'flex',
+  flexDirection: 'column',
+  width: '100wv',
+  '& .headerWrapper': {
+    width: '100%',
+    height: '100px',
+    color: '#253CF2',
+    fontSize: '20px',
+    fontWeight: '500',
+    backgroundColor: '#E5E8FD',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center'
+  }
+})
